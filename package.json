@@ -1,0 +1,18 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "Una base de datos que contenga diversos contactos de personas con sus nombres, teléfonos, emails, etc",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Ricardo Dillarza",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
