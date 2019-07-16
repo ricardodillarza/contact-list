@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(251, 253, 254);
+  margin: 0;
+	padding: 0;
+  padding-top: 100px;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: black;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+h4 {
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contenido {
+  display: flex;
+  text-align: center;
+}
+
+.buttonNewContact-section {
+  width: 40%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contactCard {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+  color: black;
+  width: 200px;
+  height: 150px;
+}
+
+.contactCard:hover {
+  cursor: pointer;
+  border: 1px solid #ffc72c;
+  transform: scale(1.2);
+}
+
+.contactCard img {
+  text-align: center;
+  width: 50px;
+}
+
+#contact-info {
+  width: 400px;
+}
+
+.singleContactInfo {
+  width: 400px;
+  height: 630px;
+  text-align: center;
+  margin-top: 115px;
+  margin-left: 150px;
+  background-color: #ffc72c;
+  border-radius: 10px;
+}
+
+.singleContactInfo img {
+  text-align: center;
+  width: 250px;
+  height: 330px;
+  padding-top: 70px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+}
+
+.contacto-nuevo {
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-family: arial;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.contacto-nuevo:hover {
+  transition: 0.1s;
+  transform: scale(1.1);
+  background-color: #ffc72c;
+  border: 1px solid transparent;
+  color: white;
+}
+
+#nuevo-contacto-modal {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  opacity: 0.8;
+  width: 100%;
+  height: 800px;
+}
+
+#nuevo-contacto-modal.active {
+  display: flex;
+}
+
+#formulario-crear-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario-crear-contacto input {
+  width: 200px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.enviar-contacto-nuevo {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.enviarInfo {
+  margin-top: 50px;
+  background-color: rgb(22, 100, 228);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.enviarInfo:hover {
+  transform: scale(1.3);
+}
+
+.cerrar-formulario {
+  width: 20px;
+  height: 20px;
+  margin-left: 180px;
+  cursor: pointer;
+}
+
+.cerrar-formulario:hover {
+  transform: scale(1.2);
+}
+
+.edit-button {
+  width: 130px;
+  height: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.edit-button:hover {
+  transform: scale(1.1);
+}
+
+/* ESTILOS DEL FORM PARA EDITAR DATOS DE CONTACTO */
+
+#edit-contact-modal {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  opacity: 0.8;
+  width: 100%;
+  height: 800px;
+}
+
+#edit-contact-modal.active {
+  display: flex;
+}
+
+#edit-form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#edit-form-contact input {
+  width: 200px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.enviarNuevaInfo {
+  margin-top: 50px;
+  background-color: rgb(22, 100, 228);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.enviarNuevaInfo:hover {
+  transform: scale(1.3);
+}
+
+.cerrar-nuevo-formulario {
+  width: 20px;
+  height: 20px;
+  margin-left: 180px;
+  cursor: pointer;
+}
+
+.cerrar-nuevo-formulario:hover {
+  transform: scale(1.2);
+}
+
+.delete-button {
+  width: 130px;
+  height: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #000;
+  height: 100px;
+  padding-bottom: 20px;
+}

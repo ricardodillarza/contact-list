@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Agenda de contactos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mi agenda de contactos</h1>
+    </header>
+
+  <section id = "nuevo-contacto-modal">
+    <article>
+      <button class = "cerrar-formulario" onclick="escondeModal()">X</button>
+      <form id = "formulario-crear-contacto">
+
+        <label for="photo-input"></label>
+        <h4>Foto (url)</h4>
+        <input type="text" name="photo" required>
+
+        <label for="name-input"></label>
+        <h4>Nombre</h4>
+        <input type="text" name="name" required>
+
+        <label for="cellphone-input"></label>
+        <h4>Celular</h4>
+        <input type="text" name="cellphone" required>
+
+        <label for="email-input"></label>
+        <h4>Email</h4>
+        <input type="text" name="email" required>
+
+        <input class="enviarInfo" type="submit"  value="Crear contacto">
+
+      </form>
+    </article>
+  </section>
+
+  <!-- SEGUNDO FORMULARIO PARA EL METODO PUT -->
+  <section id = "edit-contact-modal">
+    <article>
+      <button class = "cerrar-nuevo-formulario" onclick="escondeNuevoModal()">X</button>
+      <form id = "edit-form-contact">
+
+        <label for="photo-input"></label>
+        <h4>Foto (url)</h4>
+        <input type="text" name="newPhoto">
+
+        <label for="name-input"></label>
+        <h4>Nombre</h4>
+        <input type="text" name="newName">
+
+        <label for="cellphone-input"></label>
+        <h4>Celular</h4>
+        <input type="text" name="newCellphone">
+
+        <label for="email-input"></label>
+        <h4>Email</h4>
+        <input type="text" name="newEmail">
+
+        <input class="enviarNuevaInfo" type="submit"  value="Editar contacto">
+
+      </form>
+    </article>
+  </section>
+
+
+    <div class="contenido">
+      <section class="buttonNewContact-section">
+        <button class = "contacto-nuevo" onclick="crearContacto()">Añadir contacto</button>
+        <div  id = "contact-list">
+        </div>
+      </section>
+
+      <section id="contact-info"></section>
+    </div>
+
+    <footer>
+      <h4>Copyright© 2019 <br>Creado por Ricardo Dillarza</h4>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
